@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2 find coaches and weather</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="Page3.css">
+    <!-- javascript link -->
+    <script src="Page3.js" defer></script> 
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+        
+        <form class="contact">
+            <label for="email">Please provide us with your Email:</label><br>
+            <input type="text" id="contact-email" name="email" placeholder="Email Address"><br>
+            <label for="textbox">Tell us about your running history and goals so our coaches can brainstorming the perfect training plan for you!</label><br>
+            <textarea id="contact-textbox" 
+                name="textbox" 
+                placeholder="Insert dreams here!"
+                rows="4" 
+                cols="50"></textarea>
+                <br>
+            <button type="submit" value="Submit" id="submitButton">Submit!</button>
+        </form>
+        
+        <!-- table for 5k pace chart -->
+        <table id="paceChart">
+        </table>
+        <!-- pace calculator -->
+        <div id="calculator">
+            <h2>Running Pace Caluculator</h2>
+            <h3>Type in the distance & time in you'd like to run to find your goal pace!</h3>
+            <p>Distance: <input type="text" placeholder="miles" id="distance"/> miles</p>
+            <p>Time: <input type="text" placeholder="hours" id="hours"/> : <input type="text" placeholder="minutes" id="minutes"/> : <input type="text" placeholder="seconds" id="seconds"/></p>
+            <p><button id="calculate_btn">Calculate Pace</button></p>
+            <p id="pace"></p>
+
+            <script type="text/javascript" src="../js-pace-calculator/calculator.js"></script>
+        </div>
+    
+</body>
+</html>

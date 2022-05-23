@@ -1,0 +1,179 @@
+body {
+    background-image: url("SBABackground-2.png");
+    background-repeat: no-repeat;
+    background-size: 1920px;
+
+    --color-primary: #1778F2;
+    --color-secondary: #FC4C02;
+    --color-secondary-dark: #ad3603;
+    --color-error: #e20c0c;
+    --color-success: #4bb544;
+    --border-radius: 4px;
+
+   /* Orange reference: Hex: #FC4C02 RGB: (252, 76, 2) */
+   /* Blue reference: Hex: #1778F2 RGB: (23, 120, 242) */
+   /* White is just solid white */
+ 
+   height:100vh;
+   font-size: 18px;
+
+}
+
+.image-stack {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(250px,1fr));
+    
+    
+    position: relative;
+}
+.image-stack__itemTop {
+   /* track lanes */
+    grid-column: 4 / span 5;
+    grid-row: 1 ; /* must be on the same row as the other image*/
+    padding-top: 8.7%; /* this pushes the image down, and keeps it proportional as it resizes*/
+    padding-left: .2%;
+    z-index: 2; /* make this image render on top of the bottom*/
+
+}
+.image-stack__itemBottom {
+    /* bluesky2 */
+    grid-column: 4 ;
+    grid-row: 1; /* make this image be on the same row*/
+    padding-top: 1%;
+    padding-left: 60%;
+    z-index: 1;
+    
+  }
+#trackLanes{
+    width: 415px;
+    border: 8px solid white;
+    box-shadow:   
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+#blue_sky2{
+    border: 8px solid white;
+    width: 350px;
+}
+/* login stuff: */
+.container{
+    text-align: center;
+    display: grid;
+    grid-column: 3/4;
+    align-self: center;
+    justify-self: center;
+    z-index: 4;
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12) ;
+    background-color: white;
+    border-radius: var(--border-radius);
+}
+.container,
+.form__input,
+.form__button {
+    font-family: 'Koulen', cursive;
+}
+.form--hidden {
+    display: none;
+}
+.form > *:first-child {
+    margin-top: 0;
+}
+
+.form > *:last-child {
+    margin-bottom: 0;
+}
+
+.form__message {
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+.form__message--success {
+    color: va(--color-success)
+}
+.form__message--error {
+    color: var(--color-error)
+}
+.form__input-group {
+    margin-bottom: 1rem;
+}
+.form__input {
+    display:block;
+    width:100%;
+    padding:0.75 rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+.form__input:focus {
+    border-color: var(--color-primary);
+}
+.form__button {
+    border-radius: var(--border-radius);
+    width: 100%;
+    padding: 1 rem 2 rem;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: var(--color-secondary);
+}
+.form__button:hover {
+    background: var(--color-secondary-dark);
+}
+.form__button:active {
+    transform: scale(0.98);
+}
+.form__input--error {
+    color: var(--color-error);
+    border-color: var(--color-error);
+}
+.form__input--error-message {
+    margin-top: 0.5 rem;
+    font-size: 0.85 rem;
+    color: var(--color-error)
+}
+.form__text {
+    text-align: center;
+}
+.form__link {
+    color: var(--color-primary);
+    text-decoration: none;
+    cursor: pointer;
+}
+.form__link:hover {
+    text-decoration: underline;
+}
+
+.PRLogo {
+    
+    grid-column: 2 / 3;
+    grid-row:1;
+    align-self: center;
+    
+    z-index: 0;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12) ;
+}
+

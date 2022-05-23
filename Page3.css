@@ -1,0 +1,94 @@
+body {
+    background-image: url("SBABackground-2.png");
+    background-repeat: no-repeat;
+    background-size: 1920px;
+    --color-primary: #1778F2;
+    --color-secondary: #FC4C02;
+    --color-secondary-dark: #ad3603;
+    --color-error: #e20c0c;
+    --color-success: #4bb544;
+    --border-radius: 4px;
+
+   /* Orange reference: Hex: #FC4C02 RGB: (252, 76, 2) */
+   /* Blue reference: Hex: #1778F2 RGB: (23, 120, 242) */
+   /* White is just solid white */
+ 
+   display: grid;
+   font-family: 'Koulen', cursive;
+   font-size: 18px;
+   height:100vh;
+   /* grid-column-gap: 10px, */
+   grid-template-columns: repeat(3, minmax(300px, 1fr));
+} 
+
+form {
+    grid-column: 2 ;
+    grid-row: 1;
+    text-align: center;
+    font-family: 'Koulen', cursive;
+    font-size: 3.5vh;
+    margin-top: 15%;
+    border: 4px solid white;
+    height: 78%;
+}
+#contact-email{
+    text-align: center;
+    width: 300px;
+}
+#contact-textbox {
+    width: 450px;
+    height: 350px;
+    text-align: center;
+}
+#submitButton {
+    width: 170px;
+    height: 80px;
+}
+#paceChart{
+    grid-column: 1;
+    font-family: 'Koulen', cursive;
+    font-size: 2.2vh;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    margin-left: 10%;
+    margin-top: 30%;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    text-align: center;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12) ;
+}
+#paceChart td, #paceChart th{
+    border: 2px solid #ddd;
+    padding: 8px
+}
+#paceChart tr:nth-child(even){background-color: #f2f2f2;}
+#paceChart th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #1778F2;
+    color: white;
+    }
+
+
+html {
+	font-family:'Koulen', cursive;
+}
+input {
+	width: 60px;
+}
+#calculator {
+    text-align: center;
+    font-family: 'Koulen', cursive;
+    margin-top: 45%;
+    margin-left: 20%;
+    width: 350px;
+    border: 4px solid white;
+    height: 40%;
+}

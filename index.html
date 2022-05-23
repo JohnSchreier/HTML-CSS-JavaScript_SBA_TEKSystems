@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBA Landing Page</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="LandingPage.css">
+    <!-- javascript link -->
+    <script src="LandingPage.js" defer></script> 
+    <!-- bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- stacked pictures -->
+    <div class="image-stack">
+        <div class="image-stack__item image-stack__itemTop">
+            <img src="trackLanes.jpg" 
+              id="trackLanes"
+              alt="track lanes at starting line">
+        </div>
+        <div class="image-stack__item image-stack__itemBottom">
+            <img src="blue_sky2.jpg" 
+              id="blue_sky2"
+              alt="blue skies and white clouds">
+         
+    </div>
+    <!-- LOGIN FORM -->
+    <div class="container">
+        <form class="form" id="login" >
+            <h1 class="form__title">Login</h1>
+                <div class="form__message form__message--error"></div> <!--message added in JS-->
+                <div class="form__input-group">
+                    <input type="text" class="form__input" autofocus placeholder="Username or Email">
+                       <div class="form__input--error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <!-- RegEx validation -->
+                    <input type="password" class="form__input" autofocus placeholder="Password" pattern="[a-zA-Z0-9]{10,50}" required/>
+                    <div class="form__input--error-message"></div>
+                </div>
+                <!-- button to next page -->
+               <button class="form__button" type="submit">Continue</button>
+                <p class="form__text">
+                    <a href="#" class="form__link">Forgot password?</a>
+                </p>
+                <p class="form__text">
+                    <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+                </p>
+        </form>
+            <!-- CREATE ACCOUNT FORM -->
+        <form class="form form--hidden" id="createAccount">
+            <h1 class="form__title">Create Account</h1>
+                <div class="form__message form__message--error"></div> <!--add Incorrect username or password later-->
+                <div class="form__input-group">
+                    <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+                       <div class="form__input--error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="text" class="form__input" autofocus placeholder="Email Address">
+                       <div class="form__input--error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="password" class="form__input" autofocus placeholder="Password">
+                    <div class="form__input--error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="password" class="form__input" autofocus placeholder="Confirm Password">
+                    <div class="form__input--error-message"></div>
+                </div>
+                <button class="form__button" type="submit">Continue</button>
+              
+                <p class="form__text">
+                    <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+                </p>
+
+        </form>
+    <!-- PR LOGO ON LEFT -->
+    </div>
+    <img src = "PRLogo.png" alt="PR logo" 
+    class="PRLogo"
+    style="width: 450px;">
+    </div>
+</body>
+</html>
