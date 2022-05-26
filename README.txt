@@ -1,5 +1,17 @@
 TECHNICAL REQUIREMENTS:
-SBA 
+
+WEBSITE:
+-This website consists of a login and create account landing page. At this time the password requirements are only 10-100 characters of only lowercase or capital letters. Upon logging in with any email, you will be directed to a second page which will give a potential running athlete options for coaching and races. A "Find Success" button will lead users to a third page where they can share their goals and past experience with their future coach. On this page they can also calculate necessary running pace for their goal race times. 
+
+TECHNOLOGIES:
+-Grid
+-VS Code
+-Google Fonts
+-CSS
+-JavaScript
+
+GITHUB:
+https://johnschreier.github.io/	
 
 HTML
 
